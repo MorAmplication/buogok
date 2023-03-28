@@ -48,6 +48,17 @@ class UserUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
+  mor_test?: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
   password?: string;
 
   @ApiProperty({
